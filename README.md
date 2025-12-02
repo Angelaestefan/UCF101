@@ -82,13 +82,6 @@ source ucf101_env/bin/activate
 jupyter notebook ucf101_cnn_rnn.ipynb
 ```
 
-Ejecutar las celdas en orden:
-1. **Sección 1-2**: Imports y filtrado de datos
-2. **Sección 3-4**: Dataset y split group-aware
-3. **Sección 5-6**: Modelos y funciones de entrenamiento
-4. **Sección 7-9**: Experimentos baseline vs improved
-5. **Sección 10**: Evaluación en 3 splits
-6. **Sección 11-12**: Documentación y guardar resultados
 
 ### Opción 2: Script Standalone
 ```bash
@@ -191,18 +184,9 @@ print(f'Predicted: {TARGET_CLASSES[pred]}, True: {TARGET_CLASSES[label]}')
 
 ## 👨‍💻 Autor
 
-Proyecto desarrollado como parte del curso de Deep Learning.
+Angela Aguilar
 
-**Fecha**: Enero 2025
+**Fecha**: Diciembre 2025
 
 ---
 
-## 📝 Notas Importantes
-
-1. **MLP no es Deep Learning**: Según requisitos del assignment, MLP no se considera un modelo de DL. Por eso usamos CNN+RNN.
-
-2. **Group-Aware Split**: CRÍTICO para evitar leakage. Los splits oficiales no son mutuamente excluyentes.
-
-3. **3-Fold Evaluation**: Necesario para evaluar robustez del modelo a variaciones en los datos.
-
-4. **Mejoras Iterativas**: Documentar qué funcionó y por qué es parte del assignment.
