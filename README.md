@@ -148,30 +148,6 @@ Split 2: 60.47%
 Split 3: 56.98%
 Mean: 58.53% ± 1.43%
 ```
-
----
-
-## 🧪 Predicciones
-
-### Interfaz de Consola
-```python
-# Cargar modelo
-model = CNN_RNN_Improved()
-model.load_state_dict(torch.load('cnn_rnn_improved.pth'))
-model.eval()
-
-# Predicción
-dataset = SkeletonDataset('ucf101_5classes_skeleton.pkl', split_or_list='test1')
-sample, label = dataset[0]
-sample = sample.unsqueeze(0).to(device)
-
-with torch.no_grad():
-    output = model(sample)
-    pred = torch.argmax(output, dim=1).item()
-
-print(f'Predicted: {TARGET_CLASSES[pred]}, True: {TARGET_CLASSES[label]}')
-```
-
 ---
 
 ## 📚 Referencias
