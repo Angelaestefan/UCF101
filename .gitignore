@@ -1,3 +1,6 @@
 ucf101_env/
 /*.pkl
 /*.Identifier
+/*png
+/*pth
+/*sh
